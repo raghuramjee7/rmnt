@@ -2,6 +2,7 @@ import click
 from rmnt.orchestrator import start
 
 @click.group()
+@click.version_option(version='1.0.0')
 def cli():
     pass
 
@@ -13,4 +14,3 @@ def make(project_name):
 
 if __name__=="__main__":
     cli()
-
