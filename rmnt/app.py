@@ -1,5 +1,4 @@
-import click
+import typer
 
-@click.group()
-def cli():
-    pass
+cli = typer.Typer()
+

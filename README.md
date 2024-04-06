@@ -17,6 +17,7 @@ project/
 ├── tests/
 │   ├── __init__.py
 │   ├── test_utils.py
+│   ├── test_app.py
 ├── .github/
 │   └── workflows/
 ├── README.md
@@ -33,6 +34,5 @@ project/
 
 ## Features
 1. Builds project structure for FastAPI and Flask projects
-2. Installs common required dependencies - pytest, sqlalchemy
 3. Creates a virtual environment
 4. Initializes a git repository
