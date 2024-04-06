@@ -5,7 +5,7 @@ def generate_object(directory, objectname, type):
     object = Path(directory, objectname)
 
     if object.exists():
-        print("{} already exists".format(objectname))
+        print("{} already exists..".format(objectname))
         return False
     
     print("Creating {}..".format(objectname))
@@ -15,8 +15,6 @@ def generate_object(directory, objectname, type):
             f.write("")
     elif type=="folder":
         object.mkdir()
-
-    print("{} created successfully".format(objectname))
 
     return True
 

@@ -1,12 +1,10 @@
-from typing import Any
-from enum import Enum, auto
-
+import textwrap
 
 class Content:
     
     @classmethod
     def get_gitignore_content(cls, projectname: str) -> str:
-        return f"""
+        return textwrap.dedent(f"""\
             {projectname}-env/
             .ipynb_checkpoints
             __pycache__/
@@ -18,7 +16,7 @@ class Content:
             instance/
             .webassets-cache
             .pytest_cache/
-        """
+        """)
     
 class Structure:
 
@@ -52,14 +50,10 @@ class PrePostCommands:
     venv_install_pre = "Installing Virtualenv package"
     venv_install_post = "Virtualenv package installed"
 
-    git_pre = "Initializing git repository"
-    git_post = "Git repository initialized"
-
+    venv_create = "Virtual Environment Created!"
+    
     dependencies_pre = "Installing dependencies - pytest"
     dependencies_post = "Dependencies installed"
-
-    venv_create_pre = "Creating virtual environment"
-    venv_create_post = "Virtual environment created"
 
     requirements_pre = "Creating requirements.txt file"
     requirements_post = "Requirements.txt file created"
