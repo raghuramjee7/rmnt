@@ -1,8 +1,8 @@
 import os
-from utils import Content, Structure, Commands, PrePostCommands
+from .utils import Content, Structure, Commands, PrePostCommands
 from pathlib import Path
-from exec import run_command
-from generator import generate_object, update_file_content
+from .exec import run_command
+from .generator import generate_object, update_file_content
 
 
 def start(project_name):

@@ -1,3 +1,6 @@
 rmnt-env/
 plan.md
 __pycache__/
+build
+dist
+rmnt.egg-info
