@@ -4,6 +4,14 @@ CLI Scaffolding Tool for web applications with python
 
 ## Installation
 
+### Using pip
+To install this package, run - `pip install rmnt`
+
+### Using source
+1. Clone this repository
+2. Create a virtual environment and install all the required packages using - `pip install -r requirements.txt`
+3. Run the following command - `pip install -e .`
+
 ## Project Structure
 ```
 project/
