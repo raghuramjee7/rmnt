@@ -1,7 +1,23 @@
 import os
+from pathlib import Path
 
-def generate_file(directory, filename, content="", extension=""):
-    pass
+def generate_object(directory, objectname, type, content=""):
+    object = Path(directory, objectname)
 
-def generate_directory(directory, directory_name):
-    pass
+    if object.exists():
+        print("{}} already exists".format(objectname))
+        return False
+    
+    print("Creating {}..".format(objectname))
+
+    if type=="file":
+        with open(object, "w") as f:
+            f.write(content)
+    elif type=="folder":
+        object.mkdir()
+
+    print("{} created successfully".format(objectname))
+
+    return True
+
+
